@@ -1,2 +1,3 @@
 # git-dummyCompanyProfile
-Repositori ini dibuat untuk mempelajari dasar-dasar Git, khususnya materi sinkronisasi seperti pull, push, fetch, dan manajemen cabang, guna mendukung kolaborasi dan pengelolaan proyek secara efisien.
+
+This repository is created to learn the basics of Git, focusing on synchronization topics such as pull, push, fetch, and branch management to support efficient collaboration and project management.
