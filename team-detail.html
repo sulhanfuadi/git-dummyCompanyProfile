@@ -37,25 +37,47 @@
       section {
         padding: 2rem;
       }
-      #team-details {
-        max-width: 800px;
+      #team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
         margin: 0 auto;
-        text-align: center;
       }
-      #team-details img {
-        width: 200px;
-        height: 200px;
+      .team-member {
+        text-align: center;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .team-member img {
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         margin-bottom: 1rem;
       }
-      #team-details h2 {
+      .team-member h2 {
         margin: 0.5rem 0;
         color: #333;
       }
-      #team-details p {
-        font-size: 1rem;
+      .team-member p {
+        font-size: 0.9rem;
         color: #666;
         line-height: 1.5;
+      }
+      .learn-more-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .learn-more-btn:hover {
+        background-color: #0056b3;
       }
       footer {
         background-color: #333;
@@ -77,15 +99,45 @@
       <a href="contact.html">Contact</a>
     </nav>
 
-    <section id="team-details">
-      <img src="https://via.placeholder.com/200" alt="John Doe" />
-      <h2>John Doe</h2>
-      <p>
-        John Doe is the CEO of Dummy Company, bringing over 20 years of
-        experience in business management. He has successfully led the company
-        to new heights with his visionary leadership and commitment to
-        excellence.
-      </p>
+    <section id="team-grid">
+      <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="John Doe" />
+        <h2>John Doe</h2>
+        <p>
+          CEO with over 20 years of experience in business management. Leads the
+          company with visionary leadership and commitment to excellence.
+        </p>
+        <a href="john-doe-details.html" class="learn-more-btn">Learn More</a>
+      </div>
+      <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Jane Smith" />
+        <h2>Jane Smith</h2>
+        <p>
+          CTO specializing in cutting-edge technologies. Drives innovation and
+          oversees technical strategies for the company's success.
+        </p>
+        <a href="jane-smith-details.html" class="learn-more-btn">Learn More</a>
+      </div>
+      <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Emily Davis" />
+        <h2>Emily Davis</h2>
+        <p>
+          Project Manager with a proven track record of delivering projects on
+          time and within budget while ensuring quality.
+        </p>
+        <a href="emily-davis-details.html" class="learn-more-btn">Learn More</a>
+      </div>
+      <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Michael Brown" />
+        <h2>Michael Brown</h2>
+        <p>
+          Marketing Director with a knack for creating impactful campaigns that
+          drive brand growth and customer engagement.
+        </p>
+        <a href="michael-brown-details.html" class="learn-more-btn"
+          >Learn More</a
+        >
+      </div>
     </section>
 
     <footer>
